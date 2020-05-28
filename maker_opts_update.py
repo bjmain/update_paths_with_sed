@@ -6,5 +6,5 @@ import os
 opts_files = glob.glob("chnk_*/maker_opts.ctl")
 for f in opts_files:
     filename = f.split("/")[0]
-    new_chnk = "/home/bmain/tarsalis/polished_Ctar_2020-05-23/" + filename + "/" + filename + ".fa"
-    os.system("sed 's#/home/bmain/tarsalis/pacbio/male_knwr/fastq/racon2_Mt_annotations/chnk1/chnk1/chnk1.fa#%s#g' %s" % (new_chnk, f))
+    new_chnk = "/home/bmain/otherpath/" + filename + "/" + filename + ".fa"
+    os.system("sed 's#/home/bmain/path/chnk1/chnk1.fa#%s#g' %s" % (new_chnk, f))
